@@ -2,7 +2,9 @@ package info.aydinoglu.baris.kalah.service;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import org.junit.*;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

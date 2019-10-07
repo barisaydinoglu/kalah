@@ -2,7 +2,10 @@ package info.aydinoglu.baris.kalah.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import info.aydinoglu.baris.kalah.model.*;
+import info.aydinoglu.baris.kalah.model.Board;
+import info.aydinoglu.baris.kalah.model.Game;
+import info.aydinoglu.baris.kalah.model.Pit;
+import info.aydinoglu.baris.kalah.model.Player;
 import info.aydinoglu.baris.kalah.model.exception.IllegalMoveException;
 import info.aydinoglu.baris.kalah.repository.GameRepository;
 

@@ -2,17 +2,17 @@ package info.aydinoglu.baris.kalah.model.dto;
 
 import java.util.Map;
 
-public class GameDTO {
+public class GameResponse {
 
-  private String id;
-  private String uri;
-  private Map<Integer, String> status;
+  private final String id;
+  private final String uri;
+  private final Map<Integer, String> status;
 
-  public GameDTO(String id, String uri) {
+  public GameResponse(final String id, final String uri) {
     this(id, uri, null);
   }
 
-  public GameDTO(String id, String uri, Map<Integer, String> status) {
+  public GameResponse(final String id, final String uri, final Map<Integer, String> status) {
     this.id = id;
     this.uri = uri;
     this.status = status;
