@@ -10,32 +10,32 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class BoardTest {
 
-    @Test
-    public void testGetPit() {
-        final Board givenBoard = new Board();
-        final Pit givenPit = givenBoard.getPit(4);
+  @Test
+  public void testGetPit() {
+    final Board givenBoard = new Board();
+    final Pit givenPit = givenBoard.getPit(4);
 
-        Assert.assertNotNull(givenPit);
-        Assert.assertEquals(4, givenPit.getIndex());
-    }
+    Assert.assertNotNull(givenPit);
+    Assert.assertEquals(4, givenPit.getId());
+  }
 
-    @Test
-    public void testInitialization() {
-        final Board givenBoard = new Board();
+  @Test
+  public void testInitialization() {
+    final Board givenBoard = new Board();
 
-        Assert.assertNotNull(givenBoard.getPits());
-        Assert.assertEquals(Board.PIT_END_INDEX, givenBoard.getPits().size());
-    }
+    Assert.assertNotNull(givenBoard.getPits());
+    Assert.assertEquals(Board.PIT_END_INDEX, givenBoard.getPits().size());
+  }
 
-    @Test
-    public void testStoneCount() {
-        final Board givenBoard1 = new Board();
-        final Board givenBoard2 = new Board();
-        givenBoard2.getPit(5).setStoneCount(0);
-        givenBoard2.getPit(11).setStoneCount(9);
+  @Test
+  public void testStoneCount() {
+    final Board givenBoard1 = new Board();
+    final Board givenBoard2 = new Board();
+    givenBoard2.getPit(5).setStoneCount(0);
+    givenBoard2.getPit(11).setStoneCount(9);
 
-        Assert.assertEquals(36, givenBoard1.getStoneCount(Player.PLAYER_NORTH, true));
-        Assert.assertEquals(30, givenBoard2.getStoneCount(Player.PLAYER_NORTH, true));
-        Assert.assertEquals(39, givenBoard2.getStoneCount(Player.PLAYER_SOUTH, true));
-    }
+    Assert.assertEquals(36, givenBoard1.getStoneCount(Player.PLAYER_NORTH, true));
+    Assert.assertEquals(30, givenBoard2.getStoneCount(Player.PLAYER_NORTH, true));
+    Assert.assertEquals(39, givenBoard2.getStoneCount(Player.PLAYER_SOUTH, true));
+  }
 }

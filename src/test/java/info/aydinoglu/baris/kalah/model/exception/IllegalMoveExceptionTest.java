@@ -10,10 +10,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class IllegalMoveExceptionTest {
 
-    @Test
-    public void testInitialization() {
-        final IllegalMoveException givenIllegalMoveException = new IllegalMoveException("move1");
+  @Test
+  public void testInitialization() {
+    final IllegalMoveException givenIllegalMoveException = new IllegalMoveException("move1");
 
-        Assert.assertEquals("Illegal move: move1", givenIllegalMoveException.getMessage());
-    }
+    Assert.assertEquals("Illegal move: move1", givenIllegalMoveException.getMessage());
+  }
 }

@@ -10,10 +10,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class GameNotFoundExceptionTest {
 
-    @Test
-    public void testInitialization() {
-        final GameNotFoundException givenGameNotFoundException = new GameNotFoundException("game1");
+  @Test
+  public void testInitialization() {
+    final GameNotFoundException givenGameNotFoundException = new GameNotFoundException("game1");
 
-        Assert.assertEquals("Could not find game game1", givenGameNotFoundException.getMessage());
-    }
+    Assert.assertEquals("Could not find game game1", givenGameNotFoundException.getMessage());
+  }
 }
