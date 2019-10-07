@@ -4,8 +4,8 @@ import info.aydinoglu.baris.kalah.model.Game;
 
 public interface GameRepository {
 
-  Game find(final String id);
+    Game find(final String id);
 
-  Game save(final Game game);
+    Game save(final Game game);
 
 }

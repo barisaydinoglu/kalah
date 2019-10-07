@@ -4,8 +4,8 @@ import info.aydinoglu.baris.kalah.model.Game;
 
 public interface GameService {
 
-  Game createGame();
+    Game createGame();
 
-  Game play(String gameId, Integer pitId);
+    Game play(String gameId, Integer pitId);
 
 }
