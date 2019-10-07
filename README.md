@@ -12,6 +12,10 @@ This is a *Java RESTful Web Service*  that runs a game of 6-stone Kalah. This we
 
 ## Getting Started
 
+### Repo
+
+* https://github.com/barisaydinoglu/kalah
+
 ### Prerequisites
 
 * [Java 1.8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) - Programming language
@@ -39,7 +43,7 @@ API endpoint documentation: <http://localhost:8080/swagger-ui.html>
 
 ## Author
 
-* [Baris Aydinoglu](https://github.com/PurpleBooth)
+* [Baris Aydinoglu](https://github.com/barisaydinoglu)
 
 ## License
 
